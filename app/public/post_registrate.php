@@ -22,6 +22,10 @@ $email = $_POST['email'];
      $errors['email'][] = "email должен содержать символ @ в строке";
  }
 
+ if($email === $email) {
+     $errors['email'][] = "Пользователь с такой почтой уже существует";
+ }
+
  $password = $_POST['psw'];
  $password_repeat = $_POST['psw-repeat'];
 
@@ -36,6 +40,11 @@ $email = $_POST['email'];
  if (empty($errors)) {
      $statement = $pdo->prepare("insert into users (name, email, password) values (:name, :email, :password)");
      $statement->execute(['name' => $name, 'email' => $email, 'password' => $password]);
+
+     $statement = $pdo->prepare('SELECT * FROM users WHERE email = :email');
+     $statement->execute(['email' => $email]);
+     $result = $statement->fetch(PDO::FETCH_ASSOC);
+     print_r($result);
  } else {
      foreach($errors as $key) {
          foreach($key as $message) {
@@ -45,6 +54,7 @@ $email = $_POST['email'];
  }
 
 
+
 //print_r($pdo);
 
 //$statement = $pdo->prepare("insert into users (name, email, password) values (:name, :email, :password)");
@@ -52,7 +62,3 @@ $email = $_POST['email'];
 
 
 #Выводит всех пользователей в таблице users
-//$statement = $pdo->prepare('SELECT * FROM users WHERE name = :name');
-//$statement->execute(['name' => $name]);
-//$result = $statement->fetch();
-//print_r($result);
