@@ -18,6 +18,7 @@ services:
         volumes:
             - ./docker/Php/php.ini:/usr/local/etc/php/conf.d/php.ini
             - .:/var/www/html
+            - ./docker/Php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
     db:
         image: postgres:10.1
         restart: always

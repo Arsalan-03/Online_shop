@@ -1,5 +1,7 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.2-fpm
 
-RUN apk --update --no-cache add git postgresql-dev
-
-RUN docker-php-ext-install pdo pdo_pgsql
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-install -j$(nproc) pgsql \
+    && docker-php-ext-install -j$(nproc) pdo_pgsql \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug

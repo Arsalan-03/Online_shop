@@ -10,6 +10,17 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="localhost" id="382664d7-3f68-4361-9eb0-f15a0dbc26ff" name="Unnamed" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="var/www/html" />
+          <mapping local-root="$PROJECT_DIR$/app" remote-root="var/www/html/app" />
+          <mapping local-root="$PROJECT_DIR$/app/public" remote-root="var/www/html/app/public" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
