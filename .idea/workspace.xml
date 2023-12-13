@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33988daf-7552-487d-ac69-22ca3dac6177" name="Changes" comment="" />
+    <list default="true" id="33988daf-7552-487d-ac69-22ca3dac6177" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/post_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/post_registrate.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +38,7 @@
     "PHP Script.post_registrate.php.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/arsan/Online-shop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,7 +111,7 @@
       <workItem from="1702361628027" duration="358000" />
       <workItem from="1702364631128" duration="727000" />
       <workItem from="1702365734225" duration="21363000" />
-      <workItem from="1702450197499" duration="6259000" />
+      <workItem from="1702450197499" duration="11473000" />
     </task>
     <servers />
   </component>
