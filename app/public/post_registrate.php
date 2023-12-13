@@ -2,7 +2,7 @@
 
 print_r($_POST);
 
-$pdo = new PDO("pgsql:host=db;port=5432;dbname=postgres;", "arsik", "0000");
+
 
 $errors = [];
 
@@ -22,9 +22,9 @@ $email = $_POST['email'];
      $errors['email'][] = "email должен содержать символ @ в строке";
  }
 
- if($email === $email) {
-     $errors['email'][] = "Пользователь с такой почтой уже существует";
- }
+//// if($email === $email) {
+//     $errors['email'][] = "Пользователь с такой почтой уже существует";
+// }
 
  $password = $_POST['psw'];
  $password_repeat = $_POST['psw-repeat'];
@@ -37,11 +37,15 @@ $email = $_POST['email'];
      $errors['password'][] = 'Пароли не совпадают';
  }
 
- if (empty($errors)) {
+
+
+ if(empty($errors)) {
+     $pdo = new PDO("pgsql:host=db;port=5432;dbname=postgres;", "arsik", "0000");
+
      $statement = $pdo->prepare("insert into users (name, email, password) values (:name, :email, :password)");
      $statement->execute(['name' => $name, 'email' => $email, 'password' => $password]);
 
-     $statement = $pdo->prepare('SELECT * FROM users WHERE email = :email');
+     $statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
      $statement->execute(['email' => $email]);
      $result = $statement->fetch(PDO::FETCH_ASSOC);
      print_r($result);
