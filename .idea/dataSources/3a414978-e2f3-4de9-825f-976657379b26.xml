@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>559</IntrospectionStateNumber>
+      <IntrospectionStateNumber>560</IntrospectionStateNumber>
       <ServerVersion>10.1</ServerVersion>
-      <StartupTime>1702490127</StartupTime>
+      <StartupTime>1702570104</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1418,7 +1418,7 @@ false posixrules
 12703||10|C|G
 12703||-9223372036854775808|U|G
 12703||10|U|G</Grants>
-      <IntrospectionStateNumber>559</IntrospectionStateNumber>
+      <IntrospectionStateNumber>560</IntrospectionStateNumber>
       <ObjectId>12994</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -1426,36 +1426,36 @@ false posixrules
       <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="4" parent="1" name="pg_signal_backend">
+    <role id="4" parent="1" name="arsik">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16385</ObjectId>
+      <SuperRole>1</SuperRole>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="5" parent="1" name="postgres">
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="10" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
-      <SuperRole>1</SuperRole>
-    </role>
-    <role id="6" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="8" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="9" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="10" parent="1" name="arsik">
-      <CanLogin>1</CanLogin>
-      <ObjectId>16385</ObjectId>
       <SuperRole>1</SuperRole>
     </role>
     <tablespace id="11" parent="1" name="pg_default">
@@ -4666,8 +4666,8 @@ false posixrules
     <schema id="245" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>559</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2023-12-13.18:18:24</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>560</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2023-12-14.17:45:02</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>351</StateNumber>
       <OwnerName>postgres</OwnerName>
