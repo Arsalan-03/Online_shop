@@ -14,13 +14,15 @@ $name = $_POST['name'];
 $email = $_POST['email'];
  if(strlen($email) < 2) {
      $errors['email'][] = 'email должен быть больше 2 символов';
- }
- $str = "@";
- $pos = strpos($email, $str);
+ } else {
+     $str = "@";
+     $pos = strpos($email, $str);
 
- if($pos === false) {
-     $errors['email'][] = "email должен содержать символ @ в строке";
+     if($pos === false) {
+         $errors['email'][] = "email должен содержать символ @ в строке";
+     }
  }
+
 
 //// if($email === $email) {
 //     $errors['email'][] = "Пользователь с такой почтой уже существует";
@@ -65,7 +67,7 @@ $email = $_POST['email'];
         <hr>
 
         <label for="name"><b>Name</b></label>
-        <label style="color: red"><?php echo $errors['name']; ?></label>
+        <label style="color: red"><?php echo implode($errors['name']); ?></label>
 
         <input type="text" placeholder="Enter Name" name="name" id="name" required>
 

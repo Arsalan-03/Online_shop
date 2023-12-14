@@ -1426,36 +1426,36 @@ false posixrules
       <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="4" parent="1" name="arsik">
-      <CanLogin>1</CanLogin>
-      <ObjectId>16385</ObjectId>
-      <SuperRole>1</SuperRole>
-    </role>
-    <role id="5" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="6" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_signal_backend">
+    <role id="4" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="10" parent="1" name="postgres">
+    <role id="5" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
+      <SuperRole>1</SuperRole>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="10" parent="1" name="arsik">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16385</ObjectId>
       <SuperRole>1</SuperRole>
     </role>
     <tablespace id="11" parent="1" name="pg_default">
