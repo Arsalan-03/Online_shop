@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33988daf-7552-487d-ac69-22ca3dac6177" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/get.login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/post.login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/handler/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/handler/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/not_found.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/get_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/get_registrate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/post_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/post_registrate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Php/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Php/xdebug.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/get.login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/get_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/registrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/post.login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/post_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/handler/registrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +81,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/public/handler" />
+      <recent name="$PROJECT_DIR$/app/public/html" />
       <recent name="$PROJECT_DIR$/yyyy" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/docker/Php" />
-      <recent name="$PROJECT_DIR$/docker" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,11 +139,39 @@
       <workItem from="1702364631128" duration="727000" />
       <workItem from="1702365734225" duration="21363000" />
       <workItem from="1702450197499" duration="25634000" />
-      <workItem from="1702566218192" duration="12233000" />
+      <workItem from="1702566218192" duration="12360000" />
+      <workItem from="1702633523892" duration="4663000" />
+      <workItem from="1702653094447" duration="5632000" />
+      <workItem from="1702714225193" duration="3029000" />
+      <workItem from="1702785402840" duration="4083000" />
+      <workItem from="1702800002409" duration="1442000" />
+      <workItem from="1702884894490" duration="23114000" />
+      <workItem from="1702960352319" duration="4834000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/public/handler/registrate.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/public/handler/main.php</url>
+          <line>1</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/public/handler/login.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
