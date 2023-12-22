@@ -5,20 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33988daf-7552-487d-ac69-22ca3dac6177" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/handler/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/handler/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/html/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/html/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/html/not_found.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controller/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a414978-e2f3-4de9-825f-976657379b26/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/get.login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/get_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/registrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/handler/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/handler/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/handler/registrate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/not_found.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/not_found.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/registrate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/post.login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/post_registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/handler/registrate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/arsan/Online-shop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/arsan/Online-shop/app/View&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +86,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/View" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/public/handler" />
       <recent name="$PROJECT_DIR$/app/public/html" />
@@ -112,7 +121,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-74080bdb84d3-com.jetbrains.php.sharedIndexes-PS-233.11799.297" />
+        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
       </set>
     </attachedChunks>
   </component>
@@ -146,7 +155,11 @@
       <workItem from="1702785402840" duration="4083000" />
       <workItem from="1702800002409" duration="1442000" />
       <workItem from="1702884894490" duration="23114000" />
-      <workItem from="1702960352319" duration="4834000" />
+      <workItem from="1702960352319" duration="5199000" />
+      <workItem from="1702970130373" duration="20780000" />
+      <workItem from="1703058447782" duration="906000" />
+      <workItem from="1703110686530" duration="31147000" />
+      <workItem from="1703219368673" duration="4305000" />
     </task>
     <servers />
   </component>
@@ -154,24 +167,10 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/public/handler/registrate.php</url>
-          <line>6</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/public/handler/main.php</url>
-          <line>1</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/public/handler/login.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/app/Controller/UserController.php" line="96">
+        <watch expression="$password" language="PHP" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>

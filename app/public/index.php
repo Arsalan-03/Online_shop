@@ -1,29 +1,24 @@
 <?php
-$requestUri = $_SERVER['REQUEST_URI'];
-$requestMethod = $_SERVER['REQUEST_METHOD'];
+require_once './../App.php';
+$controllerAutoloader = function (string $className) // Анонимные функции
+{
+    //Controller\UserController - был таким
+    // а теперь с помощью константы DIRECTORY_SEPARATOR, стал вот таким - Controller/UserController
+    // '\\' - первый слэш экранирует, а второй означает, то что наш слэш обратный
+    $path = str_replace('\\', DIRECTORY_SEPARATOR, $className);
+    //str_replace - Заменяет все вхождения строки поиска на строку замены
 
-if($requestUri === '/registrate') {
-    if($requestMethod === 'GET') {
-        require_once "./html/registrate.php";
-    }  elseif ($requestMethod === 'POST') {
-            require_once "./handler/registrate.php";
-        }else {
-            echo"<h1>404 Метод $requestMethod не поддерживается для сайта $requestUri</h1>";
-        }
-    } elseif ($requestUri === '/login') {
-        if($requestMethod === 'GET') {
-            require_once "./html/login.php";
-        }  elseif ($requestMethod === 'POST') {
-            require_once "./handler/login.php";
-        }else {
-            echo"<h1>404 Метод $requestMethod не поддерживается для сайта $requestUri</h1>";
-        }
-    } elseif ($requestUri === '/main') {
-        if($requestMethod === 'GET') {
-            require_once "./handler/main.php";
-        }else {
-            echo"<h1>404 Метод $requestMethod не поддерживается для сайта $requestUri</h1>";
-        }
-    }else {
-        require_once "./html/not_found.php";
+    $path = dirname(__DIR__) . '/' . $path . '.php';
+
+    if (file_exists($path)) { // Проверяет, есть ли такой файл
+        require_once $path;
+        return true;
     }
+    return false; //Если нет такого файла, то переходит на другой Autoloader
+};
+
+
+spl_autoload_register($controllerAutoloader); // Запускает Автолоадер
+
+$app = new App(); //Создаём объект класса АPP
+$app->run();//Запускаем метод run
