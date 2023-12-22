@@ -19,10 +19,13 @@ services:
             - ./docker/Php/php.ini:/usr/local/etc/php/conf.d/php.ini
             - .:/var/www/html
             - ./docker/Php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+        env_file:
+            - .env
     db:
         image: postgres:10.1
         restart: always
         environment:
+            - POSTGRES_HOST=${DB_HOST}
             - POSTGRES_DB=${DB_DATABASE}
             - POSTGRES_USER=${DB_USERNAME}
             - POSTGRES_PASSWORD=${DB_PASSWORD}

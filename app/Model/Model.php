@@ -8,6 +8,12 @@ class Model
     protected PDO $pdo;
     public function __construct()
     {
-        $this->pdo = new PDO("pgsql:host=db;port=5432;dbname=postgres;", "arsik", "0000");
+        $host = getenv('DB_HOST');
+        $port = getenv('DB_PORT');
+        $dataBase = getenv('DB_DATABASE');
+        $user = getenv('DB_USERNAME');
+        $psw = getenv('DB_PASSWORD');
+
+        $this->pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dataBase", $user, $psw);
     }
 }
